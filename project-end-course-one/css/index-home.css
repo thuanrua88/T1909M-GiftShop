@@ -1,0 +1,77 @@
+/* INDEX-HOME */
+
+/* header-language-background  */
+.header-language-background {
+  font-size: 15px;
+  font-weight: 800;
+  font-family: sans-serif;
+  background-color: #bae8e8;
+  padding: 0;
+  color:white;s
+}
+
+/* header  */
+.header .navbar-brand p {
+  font-size: 30px;
+  font-weight: 800;
+  padding-top: 10px;
+}
+/* main-container  */
+.main-container{
+  height: 90vh;
+}
+.main-container .promos {
+  text-align: center;
+  margin-top: 30px;
+}
+.main-container .promos button {
+  padding: 20px 40px;
+  font-size: 20px;
+}
+.list .row {
+  margin: 30px 0 60px 0;
+}
+.list .row .card {
+  border:0;
+}
+.list .row .card :hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.list-products .title p {
+  font-family: cursive;
+  font-size: 400;
+  font-size: 30px;
+  margin: 40px 0 40px 0;
+
+}
+/* footer-container  */
+.footer {
+  background-color: #e3f6f5;
+  padding: 60px;
+}
+.footer i {
+  margin: 0 10px;
+  padding: 10px;
+}
+.footer i:hover {
+  opacity: 0.7;
+}
+.footer h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer p {
+  font-size: 15px;
+  color:#272343;
+}
+.footer  .information ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .information ul li a {
+  text-decoration: none;
+  color: #272343;
+}
