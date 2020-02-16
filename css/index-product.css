@@ -1,0 +1,73 @@
+/* main-products */
+.main-products {
+  padding: 50px 0 50px 0;
+
+}
+.main-products .view {
+  margin-bottom: 30px;
+}
+.main-products .row {
+  margin-bottom:50px;
+}
+.main-products .view img:hover {
+  transform: scale(1.1);
+  transition: 0.9s;
+}
+.main-products .Add-to-cart {
+  width: 300px;
+  border: 1px solid blue;
+  margin: 10px 0 10px 0;
+}
+.main-products .Add-to-cart a {
+  padding: 20px 80px;
+  text-decoration: none;
+  margin: 0 auto ;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-products .buy-now:hover {
+  opacity: 0.6;
+}
+.main-products .buy-now {
+  width: 300px;
+  background: blue;
+  color:white;
+  margin: 10px 0 10px 0;
+}
+.main-products .buy-now a {
+  padding: 20px 80px;
+  text-decoration: none;
+  margin: 0 auto ;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-products .black {
+  text-align: center;
+}
+.main-products .black a {
+  padding: 20px 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.main-products .black a:hover{
+  background: #e3f6f5;
+  padding: 21px 41px;
+  transition: 0.5;
+}
+.compare .cart {
+  margin: 0 10px ;
+}
+.compare .title p{
+  font-size:20px;
+  font-weight: 400;
+  font-family: cursive;
+}
+.compare .card {
+  box-shadow: 2px 2px 4px 2px rgb(156, 142, 153);
+}
+.compare .card:hover {
+  box-shadow: 2px 3px 5px 2px rgb(156, 142, 153);
+}
