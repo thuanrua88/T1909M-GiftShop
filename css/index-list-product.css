@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.card-body a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #ffa270;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.card-body a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-product .row {
+    margin-top: 30px;
+}
+
+.main {
+    margin-bottom: 30px;
+}
+
+.list-unstyled li a {
+    text-decoration: none;
+    color: #ffa270;
+}
+
+.font-italic {
+    color: #c63f17;
+}
+
+.blog-pagination {
+    margin-top: 30px;
+    ;
+}
+
+.blog-pagination a:hover {
+    color: #c63f17;
+}
