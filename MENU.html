@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menu</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script type="text/javascript">
+
+  </script>
+</head>
+
+<body>
+  <!-- HEADER LANGAGUE -->
+  <section class="header-langague bg-warning">
+    <div class="container">
+      <p class="text-white text-right">Welcome to GIFTSHOP</p>
+    </div>
+
+  </section>
+  <!-- HEADER MAIN CONTENT -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="HOME.HTML"><img src="IMG\logo1.jpg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="HOME.HTML">BUY GIFT CART <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DEALS</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">PROMOS <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ABOUT.HTML">GROUP GIFT</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <a href="#" data-toggle="modal" data-target="#modal-REGIGSTRATION">REGISTER</a>
+            <a href="#" data-toggle="modal" data-target="#modal-singin">SIGN IN</a>
+            <a href="your-cart.html"><button type="button" class="btn btn-outline-warning"><i class="fa fa-shopping-cart"></i> MyCart</button></a>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<div class="form-REGIGSTRATION">
+  <div class="modal fade" id="modal-REGIGSTRATION" tabindex="-1" role="dialog" aria-labelledby="modal-loginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-loginLabel">REGISTER</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="text-center border border-light p-5" action="#!">
+            <div class="form-row mb-4">
+              <div class="col">
+                <!-- First name -->
+                <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+              </div>
+              <div class="col">
+                <!-- Last name -->
+                <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+              </div>
+            </div>
+
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Password -->
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+
+            <!-- Phone number -->
+            <div class="phone-number">
+                 <input type="text" id="defaultRegisterFormPassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+            </div>
+
+
+
+            <!-- Newsletter -->
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="defaultRegisterFormNewsletter">
+              <label class="custom-control-label" for="defaultRegisterFormNewsletter">Subscribe to our newsletter</label>
+            </div>
+
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block" type="submit">REGISTER</button>
+
+            <!-- Social register -->
+            <p>or sign up with:</p>
+
+            <a type="button" class="btn-floating btn-fb btn-md">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a type="button" class="btn-floating btn-tw btn-md">
+              <i class="fa fa-twitter"></i>
+            </a>
+
+            <a type="button" class="btn-floating btn-git btn-sm">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <hr>
+
+            <!-- Terms of service -->
+            <p>By clicking
+              <em>Sign up</em> you agree to our
+              <a href="" target="_blank">terms of service</a>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="form-singin">
+  <div class="modal fade" id="modal-singin" tabindex="-1" role="dialog" aria-labelledby="modal-loginLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-loginLabel">SIGN IN</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="text-center border border-light p-5" action="#!">
+
+
+            <!-- E-mail -->
+            <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Password -->
+            <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+
+
+            <!-- Phone number -->
+
+
+
+
+
+
+            <!-- Sign up button -->
+            <button class="btn btn-info my-4 btn-block" type="submit">LOGIN</button>
+
+            <!-- Social register -->
+             <a href="REGISTER.HTML">LOGIN WITH</a>
+
+            <a type="button" class="btn-floating btn-fb btn-md">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a type="button" class="btn-floating btn-tw btn-md">
+              <i class="fa fa-twitter"></i>
+            </a>
+
+            <a type="button" class="btn-floating btn-git btn-sm">
+              <i class="fa fa-github"></i>
+            </a>
+
+            <hr>
+
+            <!-- Terms of service -->
+
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- MAIN CONTAINT MENU-->
+  <section class="main-content-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 mb-2">
+          <h2>Buy Gift Cards Online</h2>
+          <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+            <!-- Accordion card -->
+            <div>
+
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingOne1">
+                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                  <h5 class="mb-0">
+                    Categorie
+                  </h5>
+                </a>
+              </div>
+
+              <!-- Card body -->
+              <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1" data-parent="#accordionEx">
+                <div class="card-body">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="menu-stuffed.html">BIRTHDAY GIFT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">GIFTS IN GRAPHICS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">GIFT TOYS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">ALARM CLOCKS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">DOLL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">LEGO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">STUFFED ANIMAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">TOY CAR</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">CHILDREN TOY</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">SOCOLA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="menu-stuffed.html">FLOWER AND BEAR</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- Accordion card -->
+
+            <!-- Accordion card -->
+            <div>
+
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingTwo2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                  <h5 class="mb-0">
+                    Price
+                  </h5>
+                </a>
+              </div>
+
+              <!-- Card body -->
+              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                <div class="card-body">
+                  <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#!">0 - 5 $</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#!">5 - 10 $</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#!">10 - 15 $</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#!">15 - 20 $</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#!">20 - 25 $</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#!">25 - 30 $</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- Accordion card -->
+
+            <!-- Accordion card -->
+            <div>
+
+              <!-- Card header -->
+              <div class="card-header" role="tab" id="headingThree3">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                  <h5 class="mb-0">
+                    Brands
+                  </h5>
+                </a>
+              </div>
+
+              <!-- Card body -->
+              <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                <div class="card-body">
+                  <form class="" action="index.html" method="post">
+                    <div class="form-group ">
+
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" href="menu-brand.html">LEGO</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="menu-brand.html">ELSA</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="menu-brand.html">TEDY</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="menu-brand.html">LAMBORGHINI</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+            <!-- Accordion card -->
+
+          </div>
+
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <div class="container">
+            <form class="form-inline md-form form-sm mt-0">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <input class="form-control form-control-sm ml-3 w-95" style="width:650px;" type="text" placeholder="Search for brands or products" aria-label="Search">
+            </form>
+            <h1>Department Storess</h1>
+            <div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <span class="badge badge-warning">SALE</span>
+                      <img src="IMG\gau bong\thu-nhoi-bong-gau-teddy-06\thu-nhoi-bong-gau-teddy-06.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>TEDY BEAR</h5>
+                        <p><del>$25 - $250</del> $25 - $250</p>
+
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\gau bong\THÚ NHỒI BÔNG GHI ÂM PIKACHU GAC132\pikachu-gac132-0111.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>PIKACHU</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src="IMG\gau bong\THÚ NHỒI BÔNG GHI ÂM THỎ CON GAC135\tho-con-gac-135-0114.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>RABBIT</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\gau bong\THÚ NHỒI BÔNG GHI ÂM VOI CON GAC136\voi-con-gac-136-0118.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>ELEPHANT</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\dong ho\ĐỒNG HỒ GỖ BÁO THỨC HÌNH CHỮ NHẬT 1295 (TRẮNG)\sound-control-temperature-time-led-desktop-digital-alarm-clock-wood-wooden-clock.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>ALARM CLOCK (WHITE 1295)</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\dong ho\ĐỒNG HỒ GỖ BÁO THỨC HÌNH TAM GIÁC 1300 (ĐỎ)\dong-ho-go-bao-thuc-_woolen_clock_-hinh-tam-giac-1300-0111_1.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>ALARM CLOCK (RED 1300)</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <span class="badge badge-warning">SALE</span>
+                      <img src=".\IMG\dong ho\ĐỒNG HỒ HẸN GIỜ TƯỚI NƯỚC CHO CÂY\dong-ho-hen-gio-tuoi-nuoc-pic-3.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>WATER TIMER WATCH</h5>
+                        <p><del>$25 - $250</del> $25 - $250</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\hoa\HOA GẤU BÔNG 2 CHUỘT MICKY ÔM BÔNG ĐÈN LED\hoa-gau-bong-2-chuot-micky-om-bong-den-led-0127_1.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>2 MICKEY AND FLOWER</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\hoa\HOA GẤU BÔNG 7 HELLO KITTY 18 BÔNG HỒNG\880ed68a85211bd4b4744f2ae2384239.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>7 HELLO KITTY AND 18 ROSE</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\hoa\HOA GẤU BÔNG ĐÔRÊMON LÔNG VŨ\img_20120323_170533.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>DORAEMON AND FLOWER</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\hoa\HOA GẤU BÔNG 5 THỎ NHEO MẮT ÔM BÔNG ĐÈN LED\hoa-gau-bong-5-tho-nheo-mat-om-bong-0112_1.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>RABBIT AND FLOWER</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\xa stress\BÀI UNO PLASTIC\dc24a6b63a492c90b2637239699a7175.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>UNO CARD PLASTIC</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <span class="badge badge-warning">SALE</span>
+                      <img src=".\IMG\xa stress\BẢNG PHÓNG PHI TIÊU 15 INCH\19add6f6bbc22a82a4ddfa54661e5e80&zimken.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>DART BOARD</h5>
+                        <p><del>$25 - $250</del> $25 - $250</p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\xa stress\MÁY LẮC XÍ NGẦU BEER CLUB\11d27eac6ebaf4a0cfcc9a42e96a06bd.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>DICE ROLLER</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\xa stress\RÚT GỖ MÀU 48 THANH\958afc85e8c35ed479e29bba3bad9cdd.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>WOOD TOYS FOLDS HIGH</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\LEGO\lego-classic-bricks-bricks-bricks.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>lego-classic-bricks-bricks-bricks</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\LEGO\LEGO 76125 Marvel Avengers Endgame Iron Man Hall Of Armor.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>LEGO 76125 Marvel Avengers Endgame Iron Man Hall Of Armor</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <a href="PRODUCT.HTML">
+                    <figure class="figure">
+                      <img src=".\IMG\TOY CAR\Lamborghini-Aventador-Roadster-04.jpg" class="figure-img img-fluid z-depth-1" alt="..." style="width: 400px">
+                      <figcaption class="figure-caption">
+                        <h5>Lamborghini Aventador Roadster Maisto RATIO 1:24</h5>
+                        <p> $25 - $250 </p>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class="Numberv text-center">
+      <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn  bg-light ">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn  bg-light ">Right</button>
+</div>
+    </div>
+    <div class="payment">
+    <div class="container">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA1.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><img src="IMG\VISA.PNG" alt=""></a>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+    <div class="information">
+      <div class="container text-center">
+        <p>The merchants represented are not sponsors of giftshop or otherwise affiliated with giftshop. The logos and other identifying marks attached are trademarks of and owned by each represented company and/or its affiliates. Please visit each company’s website for additional terms and conditions.</p>
+        <p>The Domino’s Gift Card promotion is valid until 9:00pm ET on 2/29/2020 or while supplies last. Promo code can be redeemed 5 times per household/account. For more details</p>
+        <p>The GameStop Gift Card promotion is valid until 9:00pm ET on 2/28/2020 or while supplies last. Promo code can be redeemed 5 times per household/account. For more details, click here.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="page-footer font-small blue pt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <div class="col-md-5 mt-md-0 mt-3">
+
+          <!-- Content -->
+          <h5 class="text-uppercase text-center">write introduct to shop by Engligh</h5>
+          <p class="text-center">The merchants represented are not sponsors of giftshop or otherwise affiliated with giftshop. The logos and other identifying marks attached are trademarks of and owned by each represented company and/or its
+            affiliates. Please visit each company’s website for additional terms and conditions</p>
+          <div class="flex flex-nowrap socialIcons text-center">
+            <div class="mr-1">
+              <a target="_blank" href="https://www.facebook.com/eGifter" class="socialLinkIcon"><img alt="Icon button that links to Facebook" data-src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/facebook-social-icon.svg"
+                  class="img-responsive lazyImgComponent imgComponent loaded" src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/facebook-social-icon.svg" data-loaded="true"></a></div>
+            <div class="mr-1">
+              <a target="_blank" href="https://twitter.com/egifter" class="socialLinkIcon">
+                <img alt="Icon button that links to Twitter" data-src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/twitter-social-icon.svg" class="img-responsive lazyImgComponent imgComponent loaded"
+                  src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/twitter-social-icon.svg" data-loaded="true"></a></div>
+            <div class="mr-1"><a target="_blank" href="https://www.pinterest.com/eGifter/" class="socialLinkIcon"><img alt="Icon button that links to Pinterest"
+                  data-src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/pinterest-social-icon.svg" class="img-responsive lazyImgComponent imgComponent loaded"
+                  src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/pinterest-social-icon.svg" data-loaded="true">
+              </a>
+            </div>
+            <div class="mr-1">
+              <a target="_blank" href="https://www.instagram.com/egifter/" class="socialLinkIcon"><img alt="Icon button that links to Instagram" data-src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/instagram-social-icon.svg"
+                  class="img-responsive lazyImgComponent imgComponent loaded" src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/instagram-social-icon.svg" data-loaded="true"></a>
+            </div>
+            <div class="mr-1"><a target="_blank" href="http://blog.egifter.com/" class="socialLinkIcon"><img alt="Icon button that links to The eGifter Blog"
+                  data-src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/egifter-social-icon.svg" class="img-responsive lazyImgComponent imgComponent loaded"
+                  src="https://d2g7ragyj76kvw.cloudfront.net/app/egm_v3/footer/social/egifter-social-icon.svg" data-loaded="true"></a></div>
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">CUSTOMER SUPPORT</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">HOTLINE : +84 888917388</a>
+                </li>
+                <li>
+                  <a href="#!">FAQs</a>
+                </li>
+                <li>
+                  <a href="CONTACTUS.HTML">CONTACT US</a>
+                </li>
+                <li>
+                  <a href="#!">EMAIL: SUPPORT.GIFTSHOP@GMAIL.COM</a>
+                </li>
+                <li>
+                  <a href="#!">WARRANTY</a>
+                </li>
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+
+
+
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">ABOUT US</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="ABOUT.HTML">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="#!">TERMS</a>
+                </li>
+                <li>
+                  <a href="#!">SECURITY</a>
+                </li>
+
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-2 mx-auto">
+
+              <!-- Links -->
+              <h5 class="text-uppercase">ADDRESS</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">8 TON THAT THUYET STREET, CAU GIAY DIST, HA NOI CITY, VIET NAM</a>
+                </li>
+
+              </ul>
+
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none">
+
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+
+              <!-- Links -->
+              <h5 class="text-uppercase ">MAPS</h5>
+
+              <a href="https://www.google.com/maps/place/%C4%90%E1%BA%A1i+h%E1%BB%8Dc+FPT+Greenwich/@21.0279991,105.7808245,14.92z/data=!4m5!3m4!1s0x313455267bce5b15:0xaa208fb0f01c7ba1!8m2!3d21.0288722!4d105.7817464"><img src="IMG\Capture.PNG"
+                  alt=""></a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+
+    <div class="footer-copyright text-center  text-white py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/"> Giftshop.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
